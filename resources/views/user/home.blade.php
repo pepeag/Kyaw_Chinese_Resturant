@@ -25,14 +25,16 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Menu</h2>
-          <p>Check Our Tasty Menu</p>
+          <h2 class="fs-3">Our tasty Menu</h2>
+          {{-- <p>Check Our Tasty Menu</p> --}}
         </div>
 
         <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
         @if($status==1)
           @foreach ($menu as $item )
           <div class="col-lg-6 menu-item filter-specialty">
+
            <a href="{{route('user#menuDetails',$item->menu_id)}}"> <img src="{{asset('uploads/'.$item->image)}}" class="menu-img" alt=""></a>
             <div class="menu-content mt-2">
               <a href="" class="ms-2">{{$item->menu_name}}</a>
@@ -49,8 +51,9 @@
               There is no pizza.
           </div>
           @endif
-          {{$menu->links()}}
+
         </div>
+        <div class="mt-2 float-end">{{$menu->links()}}</div>
       </div>
     </section><!-- End Menu Section -->
 
@@ -237,14 +240,14 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="member" data-aos="zoom-in" data-aos-delay="200">
-                  <img src="assets/img/pepeag.jpg" class="img-thumbnail"  alt="">
+                  <img src="assets/img/pepeag.jpg" class="img-fluid"  alt="">
                   <div class="member-info">
                     <div class="member-info-content">
                       <h4>pepeag</h4>
                       <span>Chef</span>
                     </div>
                     <div class="social">
-                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href="https://web.facebook.com/pepeag.me"><i class="bi bi-facebook"></i></a>
                       <a href=""><i class="bi bi-instagram"></i></a>
                       <a href=""><i class="bi bi-linkedin"></i></a>
                     </div>

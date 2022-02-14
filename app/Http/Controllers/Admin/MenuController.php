@@ -14,7 +14,7 @@ class MenuController extends Controller
 {
     public function menu()
     {
-        $data = Menu::paginate(5);
+        $data = Menu::paginate(6);
         if (count($data) == 0) {
             $emptyStatus = 0;
         } else {

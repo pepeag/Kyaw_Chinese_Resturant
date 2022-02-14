@@ -299,8 +299,7 @@ h6 {
 }
 
 .navbar a:hover,
-.navbar button:hover
-.navbar .active,
+.navbar button:hover .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
     color: #d9ba85;
@@ -699,7 +698,7 @@ section {
 }
 
 .section-title {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .section-title h2 {
